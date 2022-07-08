@@ -6,6 +6,13 @@
   margin: auto;
 }
 
+.container-baner{
+  max-width: 1130px;
+  width: 100%;
+  padding: 0 0 0 16px;
+  margin: auto;
+}
+
 .container__padding-one{
   padding: 160px 0 160px 0;
     @media screen and (max-width: 1024px) {
@@ -17,6 +24,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
+  line-height: 150%;
     @media screen and (max-width: 550px){
       font-size: 24px;
     }
@@ -45,10 +53,6 @@
 // Конец общие
 
 // Наши преимущества
-.advantages{
-  border: 1px solid;
-}
-
 .advantages__block{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -62,11 +66,67 @@
 }
 // Конец наши преимущества
 
-// Наши сервисы
-.services{
-  border: 1px solid;
+// Заявка
+.baner{
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: linear-gradient(261.57deg, #82D2F9 2.45%, #06A3F0 112.29%); 
+    @media screen and (max-width: 580px) {
+      flex-direction: column;
+    }
 }
 
+.baner__text{
+  max-width: 550px;
+  width: 100%;
+  padding: 86px 0 86px 80px;
+    @media screen and (max-width:768px) {
+      padding: 20px 0 20px 20px;
+    }
+    @media screen and (max-width:580px) {
+      padding: 40px 16px 0 16px;
+    }
+}
+
+.baner__description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  margin-top: 4px;
+}
+
+.baner__button{
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 8px;
+  color: white;
+  background: rgba(0,0,0,0);
+  padding: 12px 32px 12px 32px;
+  margin-top: 40px;
+    @media screen and (max-width: 425px) {
+      width: 100%;
+      margin-top: 32px;
+    }
+}
+
+.baner-img{
+  max-width: 550px;
+    @media screen and (max-width: 425px) {
+      max-width: 100%;
+      overflow: hidden;
+    }
+    img{
+      width: 100%;
+        @media screen and (max-width: 425px) {
+          width: 400px;
+        }
+    }
+}
+// Конец заявка
+
+// Наши сервисы
 .services__block{
   display: flex;
   justify-content: space-between;
