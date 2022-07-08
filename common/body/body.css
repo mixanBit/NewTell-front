@@ -136,7 +136,7 @@
 }
 
 .baner-img {
-  max-width: 550px;
+  max-width: auto;
 }
 @media screen and (max-width: 425px) {
   .baner-img {
