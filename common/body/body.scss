@@ -1,7 +1,4 @@
-.advantages{
-  border: 1px solid;
-}
-
+// Общие
 .container{
   max-width: 1130px;
   width: 100%;
@@ -45,6 +42,12 @@
       margin-top: 16px;
     }
 }
+// Конец общие
+
+// Наши преимущества
+.advantages{
+  border: 1px solid;
+}
 
 .advantages__block{
   display: grid;
@@ -57,3 +60,25 @@
       grid-template-columns: repeat(1, 1fr);
     }
 }
+// Конец наши преимущества
+
+// Наши сервисы
+.services{
+  border: 1px solid;
+}
+
+.services__block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 30px;
+  overflow: hidden;
+  
+  margin-top: 40px;
+    img{
+      @media screen and (max-width: 550px) {
+        max-height: 50px;
+      }
+    }
+}
+// Конец наши сервисы
