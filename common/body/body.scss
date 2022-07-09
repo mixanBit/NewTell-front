@@ -1,5 +1,6 @@
 // Общие
 .container{
+  // border: 1px solid;
   max-width: 1130px;
   width: 100%;
   padding: 0 16px 0 16px;
@@ -52,6 +53,142 @@
 }
 // Конец общие
 
+// Об услуге
+.service{
+
+}
+
+.service__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 128px;
+    @media screen and (max-width: 1024px) {
+      grid-gap: 30px;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+}
+
+.service__text{
+  max-width: 460px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      order: 1;
+    }
+}
+
+.service__description{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  margin-top: 24px;
+}
+
+.service__video{
+  border-radius: 16px;
+  max-width: 558px;
+  width: 100%;
+  position: relative;
+  display: flex;
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      order: 2;
+    }
+}
+
+.video__preview{
+  width: 100%;
+}
+
+.video__button{
+  border: none;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // top: 36%;
+  // left: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+    @media screen and (max-width: 580px) {
+      width: 100px;
+      height: 100px;
+    }
+    img{
+      width: 41px;
+      margin-left: 13px;
+        @media screen and (max-width: 580px) {
+          width: 34px;
+          margin-left: 10px;
+        }
+    }
+}
+// Конец об услуге
+
+// Технология WebRTC
+.WebRTC{
+  color: white;
+  background: linear-gradient(261.57deg, #82D2F9 2.45%, #06A3F0 112.29%); 
+}
+
+.WebRTC__container{
+  display: flex;
+  justify-content: space-between;
+    @media screen and (max-width: 580px){
+      flex-direction: column;
+    }
+}
+
+.WebRTC__text{
+  max-width: 576px;
+  width: 100%;
+  padding: 80px 0 80px 0;
+    @media screen and (max-width: 580px){
+      padding: 40px 0 0 0;
+    }
+}
+
+.WebRTC__description{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  margin-top: 4px;
+}
+
+.WebRTC__img{
+  max-width: auto;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  margin-top: -38px;
+    @media screen and (max-width: 580px){
+      margin-top: 20px;
+    }
+    img{
+      width: 100%;
+        @media screen and (max-width: 580px){
+          margin-bottom: -80px;
+        }
+    }
+}
+// Конец технология WebRTC
+
+
+
+
+
 // Наши преимущества
 .advantages__block{
   display: grid;
@@ -101,11 +238,13 @@
   cursor: pointer;
   border: 1px solid;
   border-radius: 8px;
+  width: 155px;
+  min-height: 54px;
   color: white;
   background: rgba(0,0,0,0);
   padding: 12px 32px 12px 32px;
   margin-top: 40px;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 580px) {
       width: 100%;
       margin-top: 32px;
     }
@@ -113,6 +252,8 @@
 
 .baner-img{
   max-width: auto;
+  display: flex;
+  align-items: flex-end;
     @media screen and (max-width: 425px) {
       max-width: 100%;
       overflow: hidden;

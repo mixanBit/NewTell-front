@@ -56,6 +56,186 @@
   margin-top: 16px;
 }
 
+.service__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 128px;
+}
+@media screen and (max-width: 1024px) {
+  .service__container {
+    grid-gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.service__text {
+  max-width: 460px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .service__text {
+    max-width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.service__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  margin-top: 24px;
+}
+
+.service__video {
+  border-radius: 16px;
+  max-width: 558px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .service__video {
+    max-width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.video__preview {
+  width: 100%;
+}
+
+.video__button {
+  border: none;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 580px) {
+  .video__button {
+    width: 100px;
+    height: 100px;
+  }
+}
+.video__button img {
+  width: 41px;
+  margin-left: 13px;
+}
+@media screen and (max-width: 580px) {
+  .video__button img {
+    width: 34px;
+    margin-left: 10px;
+  }
+}
+
+.WebRTC {
+  color: white;
+  background: linear-gradient(261.57deg, #82D2F9 2.45%, #06A3F0 112.29%);
+}
+
+.WebRTC__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 580px) {
+  .WebRTC__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.WebRTC__text {
+  max-width: 576px;
+  width: 100%;
+  padding: 80px 0 80px 0;
+}
+@media screen and (max-width: 580px) {
+  .WebRTC__text {
+    padding: 40px 0 0 0;
+  }
+}
+
+.WebRTC__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  margin-top: 4px;
+}
+
+.WebRTC__img {
+  max-width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+  margin-top: -38px;
+}
+@media screen and (max-width: 580px) {
+  .WebRTC__img {
+    margin-top: 20px;
+  }
+}
+.WebRTC__img img {
+  width: 100%;
+}
+@media screen and (max-width: 580px) {
+  .WebRTC__img img {
+    margin-bottom: -80px;
+  }
+}
+
 .advantages__block {
   display: -ms-grid;
   display: grid;
@@ -123,12 +303,14 @@
   cursor: pointer;
   border: 1px solid;
   border-radius: 8px;
+  width: 155px;
+  min-height: 54px;
   color: white;
   background: rgba(0, 0, 0, 0);
   padding: 12px 32px 12px 32px;
   margin-top: 40px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 580px) {
   .baner__button {
     width: 100%;
     margin-top: 32px;
@@ -137,6 +319,12 @@
 
 .baner-img {
   max-width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 @media screen and (max-width: 425px) {
   .baner-img {
