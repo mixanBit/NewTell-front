@@ -45,6 +45,7 @@
 .item-style {
   border: 1px solid #CED3D5;
   border-radius: 2px;
+  background: white;
   padding: 24px 24px 24px 24px;
 }
 .item-style img {
@@ -350,6 +351,51 @@
   }
 }
 
+.solves-tasks {
+  background: #ECF9FF;
+  padding: 100px 0 100px 0;
+}
+@media screen and (max-width: 1024px) {
+  .solves-tasks {
+    padding: 40px 0 54px 0;
+  }
+}
+
+.solves-tasks__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px 30px;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  margin-top: 40px;
+}
+.solves-tasks__container::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .solves-tasks__container {
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 580px) {
+  .solves-tasks__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 24px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .solves-tasks__item {
+    min-width: 250px;
+  }
+}
+
 .advantages__block {
   display: -ms-grid;
   display: grid;
@@ -467,7 +513,12 @@
           align-items: center;
   grid-gap: 30px;
   overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
   margin-top: 40px;
+}
+.services__block::-webkit-scrollbar {
+  display: none;
 }
 @media screen and (max-width: 550px) {
   .services__block img {
