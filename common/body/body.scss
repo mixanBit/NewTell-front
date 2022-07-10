@@ -48,6 +48,7 @@
     p{
       font-weight: 500;
       font-size: 20px;
+      line-height: 170%;
       margin-top: 16px;
     }
 }
@@ -185,11 +186,44 @@
 }
 // Конец технология WebRTC
 
-// Как использовать
-.to-use{
-  border: 1px solid;
+// CallMe это
+.callme-this__container{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 40px;
+  margin-top: 40px;
+    @media screen and (max-width: 768px) {
+      margin-top: 32px;
+    }
+    @media screen and (max-width: 580px) {
+      grid-gap: 24px;
+    }
 }
 
+.callme-this__column-left{
+  display: grid;
+  grid-template-columns:  fit-content(365px) fit-content(460px);
+  justify-content: flex-start;
+  grid-gap: 30px;
+    @media screen and (max-width: 580px) {
+      grid-template-columns:  1fr;
+      grid-gap: 24px;
+    }
+}
+
+.callme-this__column-right{
+  display: grid;
+  grid-template-columns:  fit-content(365px) fit-content(460px);
+  justify-content: flex-end;
+  grid-gap: 30px;
+    @media screen and (max-width: 580px) {
+      grid-template-columns:  1fr;
+      grid-gap: 24px;
+    }
+}
+// Конец CallMe это
+
+// Как использовать
 .to-use__container{
   display: flex;
   justify-content: space-between;
@@ -231,8 +265,6 @@
 }
 
 // Конец как использовать
-
-
 
 // Наши преимущества
 .advantages__block{
