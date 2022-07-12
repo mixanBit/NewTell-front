@@ -65,15 +65,28 @@
 
 .CallMe{
   overflow: hidden;
+  margin-top: 64px;
+    @media screen and (max-width: 768px) {
+      margin-top: 24px;
+    }
 }
 
 .CallMe__container{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+    @media screen and (max-width: 580px){
+      flex-direction: column;
+    }
 }
 
 .CallMe__text{
-  padding: 0 0 40px 0;
+  padding: 72px 0 40px 0;
+    @media screen and (max-width: 580px){
+      display: flex;
+      flex-direction: column;
+      order: 2;
+      padding: 24px 0 40px 0;
+    }
 }
 
 .CallMe__h1{
@@ -81,6 +94,9 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 150%;
+    @media screen and (max-width: 580px){
+      font-size: 24px;
+    }
 }
 
 .CallMe__p{
@@ -91,6 +107,9 @@
   font-size: 16px;
   line-height: 190%;
   margin-top: 24px;
+    @media screen and (max-width: 580px){
+      margin-top: 8px;
+    }
 }
 
 .CallMe__btn-started{
@@ -106,14 +125,26 @@
   background: #009EEB;
   padding: 12px 32px 12px 32px;
   margin-top: 40px;
+    @media screen and (max-width: 580px){
+      width: 100%;
+      margin-top: 30px;
+    }
 }
 
 .CallMe__img{
-  border: 1px solid;
-  max-width: 554px;
+  max-width: 511px;
   width: 100%;
   position: relative;
+  margin: auto;
+  margin-right: -70px;
+    @media screen and (max-width: 580px){
+      display: flex;
+      order: 1;
+      padding: 0 20px 0 20px;
+      margin-right: auto;
+    }
     img{
+      width: 100%;
       position: relative;
       z-index: 2;
     }
@@ -126,8 +157,22 @@
   position: absolute;
   z-index: 1;
   top: 72px;
-  left: 0;
+  left: -90px;
   background: #C0E16E;
+    @media screen and (max-width: 580px){
+      max-width: 350px;
+      width: 100%;
+      max-height: 350px;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: auto;
+    }
+    @media screen and (max-width: 375px){
+      max-width: 263px;
+      max-height: 263px;
+    }
 }
 // Конец CallMe – это удобная связь
 

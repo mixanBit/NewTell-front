@@ -67,19 +67,48 @@
 
 .CallMe {
   overflow: hidden;
+  margin-top: 64px;
+}
+@media screen and (max-width: 768px) {
+  .CallMe {
+    margin-top: 24px;
+  }
 }
 
 .CallMe__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 580px) {
+  .CallMe__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .CallMe__text {
-  padding: 0 0 40px 0;
+  padding: 72px 0 40px 0;
+}
+@media screen and (max-width: 580px) {
+  .CallMe__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 24px 0 40px 0;
+  }
 }
 
 .CallMe__h1 {
@@ -87,6 +116,11 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 150%;
+}
+@media screen and (max-width: 580px) {
+  .CallMe__h1 {
+    font-size: 24px;
+  }
 }
 
 .CallMe__p {
@@ -97,6 +131,11 @@
   font-size: 16px;
   line-height: 190%;
   margin-top: 24px;
+}
+@media screen and (max-width: 580px) {
+  .CallMe__p {
+    margin-top: 8px;
+  }
 }
 
 .CallMe__btn-started {
@@ -119,14 +158,34 @@
   padding: 12px 32px 12px 32px;
   margin-top: 40px;
 }
+@media screen and (max-width: 580px) {
+  .CallMe__btn-started {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
 
 .CallMe__img {
-  border: 1px solid;
-  max-width: 554px;
+  max-width: 511px;
   width: 100%;
   position: relative;
+  margin: auto;
+  margin-right: -70px;
+}
+@media screen and (max-width: 580px) {
+  .CallMe__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0 20px 0 20px;
+    margin-right: auto;
+  }
 }
 .CallMe__img img {
+  width: 100%;
   position: relative;
   z-index: 2;
 }
@@ -138,8 +197,27 @@
   position: absolute;
   z-index: 1;
   top: 72px;
-  left: 0;
+  left: -90px;
   background: #C0E16E;
+}
+@media screen and (max-width: 580px) {
+  .CallMe__circle {
+    max-width: 350px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    margin: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .CallMe__circle {
+    max-width: 263px;
+    max-height: 263px;
+  }
 }
 
 .service__container {
