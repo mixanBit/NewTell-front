@@ -63,6 +63,10 @@
   background-size: cover;
 }
 
+.CallMe{
+  overflow: hidden;
+}
+
 .CallMe__container{
   display: flex;
   justify-content: flex-start;
@@ -116,14 +120,14 @@
 }
 
 .CallMe__circle{
-  // border-radius: 50%;
-  // width: 1019px;
-  // height: 1019px;
+  border-radius: 50%;
+  width: 1019px;
+  height: 1019px;
   position: absolute;
   z-index: 1;
   top: 72px;
   left: 0;
-  // background: #C0E16E;
+  background: #C0E16E;
 }
 // Конец CallMe – это удобная связь
 

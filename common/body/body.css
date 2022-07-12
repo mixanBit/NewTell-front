@@ -65,6 +65,10 @@
   background-size: cover;
 }
 
+.CallMe {
+  overflow: hidden;
+}
+
 .CallMe__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,10 +132,14 @@
 }
 
 .CallMe__circle {
+  border-radius: 50%;
+  width: 1019px;
+  height: 1019px;
   position: absolute;
   z-index: 1;
   top: 72px;
   left: 0;
+  background: #C0E16E;
 }
 
 .service__container {
