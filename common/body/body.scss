@@ -56,6 +56,78 @@
 }
 // Конец общие
 
+// CallMe – это удобная связь
+.fon{
+  background-image: url(../body/images/convenient-communication/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.CallMe__container{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.CallMe__text{
+  padding: 0 0 40px 0;
+}
+
+.CallMe__h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+}
+
+.CallMe__p{
+  max-width: 456px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  margin-top: 24px;
+}
+
+.CallMe__btn-started{
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 190%;
+  color: white;
+  background: #009EEB;
+  padding: 12px 32px 12px 32px;
+  margin-top: 40px;
+}
+
+.CallMe__img{
+  border: 1px solid;
+  max-width: 554px;
+  width: 100%;
+  position: relative;
+    img{
+      position: relative;
+      z-index: 2;
+    }
+}
+
+.CallMe__circle{
+  // border-radius: 50%;
+  // width: 1019px;
+  // height: 1019px;
+  position: absolute;
+  z-index: 1;
+  top: 72px;
+  left: 0;
+  // background: #C0E16E;
+}
+// Конец CallMe – это удобная связь
+
+
 // Об услуге
 .service{
 
