@@ -1,44 +1,3 @@
-
-.logo-img{
-  max-width: 222px;
-    @media screen and (max-width: 580px) {
-      max-width: 119px;
-    }
-    img{
-      width: 100%;
-    }
-}
-
-.menu{
-  display: flex;
-  grid-gap: 32px;
-    @media screen and (max-width: 1024px){
-        flex-direction: column;
-    }
-}
-
-.menu__link{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #1F2223;
-}
-
-.connection{
-  display: flex;
-  flex-direction: column;
-}
-
-.connection__number{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  color: #1F2223;
-}
-
-// Шапка
 .header{
   padding: 15px 0 0 0 ;
 }
@@ -122,29 +81,3 @@
     font-size: 13px;
   }
 }
-
-
-
-// Подвал
-.footer{
-  background: linear-gradient(89.7deg, #F2F4F6 -14.22%, #DFF5FF 105.24%);
-  padding: 17px 0 17px 0;
-}
-
-.footer__container{
-  max-width: 1313px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  padding: 0 16px 0 16px;
-}
-
-
-.footer__menu{
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
-}
-

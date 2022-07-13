@@ -1,0 +1,22 @@
+.footer{
+  background: linear-gradient(89.7deg, #F2F4F6 -14.22%, #DFF5FF 105.24%);
+  padding: 17px 0 17px 0;
+}
+
+.footer__container{
+  max-width: 1313px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0 16px 0 16px;
+}
+
+
+.footer__menu{
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
