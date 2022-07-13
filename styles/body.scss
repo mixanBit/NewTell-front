@@ -23,6 +23,9 @@
 
 .CallMe__text{
   padding: 72px 0 40px 0;
+    @media screen and (max-width: 768px){
+      padding: 34px 0 40px 0;
+    }
     @media screen and (max-width: 580px){
       display: flex;
       flex-direction: column;

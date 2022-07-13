@@ -34,6 +34,11 @@
 .CallMe__text {
   padding: 72px 0 40px 0;
 }
+@media screen and (max-width: 768px) {
+  .CallMe__text {
+    padding: 34px 0 40px 0;
+  }
+}
 @media screen and (max-width: 580px) {
   .CallMe__text {
     display: -webkit-box;
