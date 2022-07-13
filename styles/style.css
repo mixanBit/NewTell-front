@@ -116,6 +116,11 @@ button, input, textarea {
   font-size: 16px;
   line-height: 150%;
   color: #1F2223;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.menu__link:hover {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .connection {
@@ -129,6 +134,7 @@ button, input, textarea {
 }
 
 .connection__number {
+  text-decoration: underline;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;

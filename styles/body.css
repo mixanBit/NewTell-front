@@ -78,6 +78,7 @@
 }
 
 .CallMe__btn-started {
+  cursor: pointer;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,8 +95,13 @@
   line-height: 190%;
   color: white;
   background: #009EEB;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
   padding: 12px 32px 12px 32px;
   margin-top: 40px;
+}
+.CallMe__btn-started:hover {
+  background: #005AA3;
 }
 @media screen and (max-width: 580px) {
   .CallMe__btn-started {
@@ -214,6 +220,7 @@
 }
 
 .service__video {
+  cursor: pointer;
   border-radius: 16px;
   max-width: 558px;
   width: 100%;
@@ -221,6 +228,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.service__video:hover .video__button {
+  background: rgba(255, 255, 255, 0.7);
 }
 @media screen and (max-width: 768px) {
   .service__video {
@@ -236,6 +246,7 @@
 }
 
 .video__button {
+  cursor: pointer;
   border: none;
   border-radius: 50%;
   width: 165px;
@@ -255,6 +266,8 @@
       -ms-flex-align: center;
           align-items: center;
   background: rgba(255, 255, 255, 0.4);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 @media screen and (max-width: 580px) {
   .video__button {
@@ -568,8 +581,14 @@
   min-height: 54px;
   color: white;
   background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
   padding: 12px 32px 12px 32px;
   margin-top: 40px;
+}
+.baner__button:hover {
+  border: 1px solid #005AA3;
+  background: #005AA3;
 }
 @media screen and (max-width: 580px) {
   .baner__button {
@@ -741,4 +760,9 @@
   font-size: 16px;
   line-height: 190%;
   background: #C0E16E;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.feedback__send:hover {
+  background: #47B533;
 }
