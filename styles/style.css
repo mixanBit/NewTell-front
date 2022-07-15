@@ -5,6 +5,12 @@
   font-weight: normal; */
 /* } */
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap");
+:root {
+  --containerWidth: 1130px;
+  --containerBanerWidth: 1130px;
+  --sidebarWidth: 288px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +29,7 @@ button, input, textarea {
 }
 
 .container {
-  max-width: 1130px;
+  max-width: var(--containerWidth);
   width: 100%;
   position: relative;
   padding: 0 16px 0 16px;
@@ -31,7 +37,7 @@ button, input, textarea {
 }
 
 .container-baner {
-  max-width: 1130px;
+  max-width: var(--containerBanerWidth);
   width: 100%;
   padding: 0 0 0 16px;
   margin: auto;
