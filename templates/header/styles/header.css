@@ -1,4 +1,12 @@
+.body_padding {
+  padding-top: 92px;
+}
+
 .header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
   padding: 15px 0 0 0;
 }
 
@@ -14,10 +22,40 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
   padding: 0 16px 0 16px;
+  margin: auto;
 }
 
+.header__container_fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: white;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-animation: animatin-header_active 0.4s;
+          animation: animatin-header_active 0.4s;
+  padding: 7px 0 7px 0;
+}
+
+@-webkit-keyframes animatin-header_active {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes animatin-header_active {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
 .sidebar-fon {
   width: 100%;
   height: 100vh;
