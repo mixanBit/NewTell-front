@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="./templates/footer/styles/footer.css">
 
   <script src="./scripts/sidebar.js" defer></script>
+  <script src="./scripts/modal-window.js" defer></script>
+  <script src="./scripts/validation-form.js" defer></script>
 </head>
 
 <body>
@@ -52,7 +54,7 @@
         <div class="CallMe__text">
           <h1 class="CallMe__h1">CallMe – это удобная связь с клиентами</h1>
           <p class="CallMe__p">Сервис, который помогает устанавливать связьс клиентом без использования привычных стандартов связи через номер телефона.</p>
-          <button class="CallMe__btn-started">Начать работу</button>
+          <button class="CallMe__btn-started modal-btn">Начать работу</button>
         </div>
 
         <div class="CallMe__img">
@@ -61,6 +63,14 @@
         </div>
       </div>
     </section>
+
+    <div class="modal-window">
+      <div class="data-received">
+        <img class="modal-close-btn" src="./page-images/newtell/CallMe/close.svg" alt="">
+        <h2 class="heading-h2">Данные получены</h2>
+        <p class="data-received__p">Мы получили данные и свяжемся с вами в кратчайшие сроки.</p>
+      </div>
+    </div>
     <!--Конец CallMe – это удобная связь -->
   </div>
   <!-- Конец шапки -->
@@ -262,9 +272,14 @@
     <div class="container feedback__container">
       <img class="feedback__figure-semicircle" src="./page-images/newtell/feedback/surface.svg" alt="">
       <h2 class="feedback__h2">Остались вопросы?<br> Напишите нам</h2>
-      <form class="feedback__form" action="##">
-        <input class="feedback__input" type="text" placeholder="Введите ваше имя">
-        <input class="feedback__input" type="text" placeholder="Ваш email">
+      <form class="feedback__form" action="#" method="post">
+        <div class="feedback__input-container">
+          <input class="feedback__input" type="text" placeholder="Введите ваше имя" required >
+        </div>
+        <div class="feedback__input-container">
+          <input class="feedback__input input-email" type="text" placeholder="Ваш email" required >
+          <div class="error-text">Введите email</div>
+        </div>
         <textarea class="feedback__textarea" name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
         <button class="feedback__send">Отправить</button>
       </form>

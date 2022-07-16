@@ -170,6 +170,62 @@
   z-index: 2;
 }
 
+.data-received {
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 8px;
+  position: relative;
+  background: #FFFFFF;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  padding: 44px 15px 44px 15px;
+  margin: 0 16px;
+  margin-top: -40px;
+}
+
+.data-received_active {
+  margin-top: 0 !important;
+}
+
+.modal-close-btn {
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  padding: 3px 3px 3px 3px;
+}
+@media screen and (max-width: 580px) {
+  .modal-close-btn {
+    padding: 8px 8px 8px 8px;
+  }
+}
+.modal-close-btn:hover {
+  opacity: 0.5;
+}
+
+.data-received__p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+}
+
 .service__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,14 +779,21 @@
   }
 }
 
+.feedback__input-container {
+  position: relative;
+}
+
 .feedback__input {
   border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0);
   width: 100%;
   height: 54px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
   padding: 15px 20px 15px 20px;
 }
 
@@ -770,4 +833,42 @@
 }
 .feedback__send:hover {
   background: #47B533;
+}
+
+.input_error {
+  border: 1px solid #EB5757;
+}
+
+.error-text {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #EB5757;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  padding: 12px 20px 12px 20px;
+}
+.error-text::before {
+  content: "";
+  width: 12px;
+  height: 16px;
+  position: absolute;
+  top: -12px;
+  left: 9px;
+  background-image: url(../page-images/newtell/feedback/triangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.error-text_active {
+  visibility: visible !important;
+  opacity: 1 !important;
 }

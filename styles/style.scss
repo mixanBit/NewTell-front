@@ -85,6 +85,30 @@ button, input, textarea{
 }
 // Конец общие
 
+// Модальное коно
+.modal-window{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(31, 34, 35, 0.4);
+  transition: .3s linear;
+}
+
+.modal-window_active{
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+// Конец модальное коно
+
+
 // Общие стилия для шапки и подвала
 .logo-img{
   max-width: 222px;

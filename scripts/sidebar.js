@@ -13,8 +13,6 @@ sidebarBtn.addEventListener('click', () => {
   }
 })
 
-
-
 sidebarFon.addEventListener('click', (el) => {
   if(el.target.classList.contains("sidebar-fon_active") || el.target.classList.contains("sidebar__btn")){
     sidebar.classList.remove('sidebar_active')
