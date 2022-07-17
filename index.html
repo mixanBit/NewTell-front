@@ -9,11 +9,13 @@
   <title>CALL ME</title>
 
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./templates/preloader/preloader.css">
   <link rel="stylesheet" href="./templates/header/styles/header.css">
   <link rel="stylesheet" href="./styles/body.css">
   <link rel="stylesheet" href="./templates/footer/styles/footer.css">
 
   <script src="./scripts/sidebar.js" defer></script>
+  <script src="./scripts/preloader.js" defer></script>
   <script src="./scripts/modal-window.js" defer></script>
   <script src="./scripts/validation-form.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -21,6 +23,14 @@
 </head>
 
 <body>
+  <!-- Предварительный загрузчик -->
+  <div class="preloader">
+    <div class="preloader__img">
+      <img src="./images/logo.png" alt="">
+    </div>
+  </div>
+  <!-- Конец предварительный загрузчик -->
+
   <!-- Шапка -->
   <div class="fon">
     <header class="header">

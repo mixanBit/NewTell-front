@@ -26,7 +26,7 @@
   margin: auto;
 }
 
-.header__container_fixed {
+.header_fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -37,6 +37,11 @@
   -webkit-animation: animatin-header_active 0.4s;
           animation: animatin-header_active 0.4s;
   padding: 7px 0 7px 0;
+}
+@media screen and (max-width: 1024px) {
+  .header_fixed {
+    position: relative;
+  }
 }
 
 @-webkit-keyframes animatin-header_active {

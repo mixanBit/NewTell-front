@@ -20,7 +20,7 @@
   margin: auto;
 }
 
-.header__container_fixed{
+.header_fixed{
   position: fixed;
   top: 0;
   left: 0;
@@ -29,6 +29,9 @@
   box-shadow: 0 2px 4px rgba(0,0,0,.2);
   animation: animatin-header_active .4s;
   padding: 7px 0 7px 0;
+    @media screen and (max-width: 1024px) {
+      position: relative;
+    }
 }
 
 @keyframes animatin-header_active {
