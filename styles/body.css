@@ -597,6 +597,11 @@
   margin-top: 40px;
   margin: 40px -15px 0 -15px;
 }
+@media screen and (max-width: 425px) {
+  .multiple-items {
+    margin-top: 20px;
+  }
+}
 .multiple-items .item-style {
   margin: 0 15px 0 15px;
 }
