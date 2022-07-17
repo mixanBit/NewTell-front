@@ -82,6 +82,11 @@ button, input, textarea {
 .item-style img {
   width: 55px;
 }
+.item-style h3 {
+  font-size: 20px;
+  line-height: 170%;
+  margin-top: 16px;
+}
 .item-style p {
   font-weight: 500;
   font-size: 20px;

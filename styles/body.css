@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .fon {
   background-image: url(../page-images/newtell/convenient-communication/bg.jpg);
   background-repeat: no-repeat;
@@ -524,6 +525,80 @@
   .to-use__description {
     margin-top: 8px;
   }
+}
+
+.decisions__management {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 20px;
+}
+@media screen and (max-width: 425px) {
+  .decisions__management {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.decisions__management .heading-h2::after {
+  content: "Решения";
+  position: relative;
+}
+@media screen and (max-width: 425px) {
+  .decisions__management .heading-h2::after {
+    content: "Какие задачи решает";
+  }
+}
+
+.decisions__slider-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 20px;
+}
+
+.decisions__slider-button {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #C0E16E;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.decisions__slider-button:hover {
+  background: #C0E16E;
+}
+
+.multiple-items {
+  margin-top: 40px;
+  margin: 40px -15px 0 -15px;
+}
+.multiple-items .item-style {
+  margin: 0 15px 0 15px;
 }
 
 .solves-tasks {
