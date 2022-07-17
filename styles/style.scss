@@ -85,6 +85,41 @@ button, input, textarea{
 }
 // Конец общие
 
+// Кастомный scroll
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+  height:0px;
+}
+  
+::-webkit-scrollbar-track {
+  background-color:rgba(0,0,0,0);
+}
+  
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-color: rgba(0,158,236, 1);
+}
+  
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(0,158,236, .5);
+}
+  
+::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+}
+  
+::-webkit-scrollbar{
+  width: 7px;
+}  
+// Конец кастомный scroll
+
+
 // Модальное коно
 .modal-window{
   width: 100%;
