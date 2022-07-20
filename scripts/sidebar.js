@@ -6,7 +6,6 @@ sidebarBtn.addEventListener('click', () => {
   if(sidebar.classList.contains("sidebar_active")){
     sidebar.classList.remove('sidebar_active')
     sidebarFon.classList.remove('sidebar-fon_active')
-    console.log('hello');
   } else{
     sidebar.classList.add('sidebar_active')
     sidebarFon.classList.add('sidebar-fon_active')
