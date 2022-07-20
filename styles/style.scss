@@ -152,12 +152,17 @@ button, input, textarea{
 // Общие стилия для шапки и подвала
 .logo-img{
   max-width: 222px;
+  transition: .3s linear;
     @media screen and (max-width: 580px) {
       max-width: 119px;
     }
     img{
       width: 100%;
     }
+}
+
+.logo-img_fixed{
+  max-width: 160px;
 }
 
 .menu{

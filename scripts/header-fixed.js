@@ -1,14 +1,30 @@
 
 let header = document.querySelector('.header')
+let headerContainer = document.querySelector('.header__container')
+let logoImg = document.querySelector('.logo-img')
 
-function myFunction() {
-  if (window.pageYOffset > 300) {
+function headerFixed() {
+  if (window.pageYOffset > 50) {
     header.classList.add("header_fixed");
-    document.getElementsByTagName('body')[0].classList.add('body_padding')
+    headerContainer.classList.add('header__container_fixed')
+    logoImg.classList.add('logo-img_fixed')
   } else {
     header.classList.remove("header_fixed");
-    document.getElementsByTagName('body')[0].classList.remove('body_padding')
+    headerContainer.classList.remove('header__container_fixed')
+    logoImg.classList.remove('logo-img_fixed')
   }
 }
 
-window.onscroll = function() {myFunction()};
+function initSize() {
+  if(document.body.clientWidth < 1025){
+    window.onscroll = function() {return false}
+  } else{
+    window.onscroll = function() {headerFixed()};
+  }
+}
+
+initSize()
+
+window.addEventListener('resize', initSize)
+
+

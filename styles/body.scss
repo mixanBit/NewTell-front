@@ -3,6 +3,10 @@
   background-image: url(../page-images/newtell/convenient-communication/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 78px;
+    @media screen and (max-width: 1024px) {
+      padding-top: 0;
+    }
 }
 
 .CallMe{
