@@ -67,10 +67,12 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 150%;
+  padding: 0 0 24px 0;
 }
 @media screen and (max-width: 580px) {
   .callme__h1 {
     font-size: 24px;
+    padding: 0 0 8px 0;
   }
 }
 
@@ -81,12 +83,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  margin-top: 24px;
-}
-@media screen and (max-width: 580px) {
-  .callme__p {
-    margin-top: 8px;
-  }
 }
 
 .callme__btn-started {
@@ -284,7 +280,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  margin-top: 24px;
 }
 
 .service__video {
@@ -392,7 +387,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  margin-top: 4px;
 }
 
 .webrtc__img {
@@ -429,12 +423,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   grid-gap: 40px;
-  margin-top: 40px;
-}
-@media screen and (max-width: 768px) {
-  .callme-this__container {
-    margin-top: 32px;
-  }
 }
 @media screen and (max-width: 580px) {
   .callme-this__container {
@@ -525,12 +513,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  margin-top: 24px;
-}
-@media screen and (max-width: 768px) {
-  .to-use__description {
-    margin-top: 8px;
-  }
 }
 
 .decisions__management {
@@ -540,9 +522,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   grid-gap: 20px;
 }
 @media screen and (max-width: 425px) {
@@ -554,6 +536,11 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+}
+@media screen and (max-width: 425px) {
+  .decisions__management .heading-h2 {
+    padding: 0 0 0 0;
   }
 }
 .decisions__management .heading-h2::after {
@@ -600,8 +587,7 @@
 }
 
 .multiple-items {
-  margin-top: 40px;
-  margin: 40px -15px 0 -15px;
+  margin: 0 -15px 0 -15px;
 }
 @media screen and (max-width: 425px) {
   .multiple-items {
@@ -631,7 +617,6 @@
   overflow: hidden;
   overflow-x: scroll;
   scrollbar-width: none;
-  margin-top: 40px;
 }
 .solves-tasks__container::-webkit-scrollbar {
   display: none;
@@ -662,7 +647,6 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 40px;
 }
 @media screen and (max-width: 1024px) {
   .advantages__block {
@@ -717,7 +701,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  margin-top: 4px;
 }
 
 .baner__button {
@@ -782,7 +765,6 @@
   overflow: hidden;
   overflow-x: scroll;
   scrollbar-width: none;
-  margin-top: 40px;
 }
 .services__block::-webkit-scrollbar {
   display: none;

@@ -57,10 +57,34 @@ button, input, textarea {
   font-weight: 700;
   font-size: 32px;
   line-height: 150%;
+  padding: 0 0 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .heading-h2 {
+    padding: 0 0 32px 0;
+  }
 }
 @media screen and (max-width: 580px) {
   .heading-h2 {
     font-size: 24px;
+  }
+}
+
+.heading-h2_padding24 {
+  padding: 0 0 24px 0;
+}
+@media screen and (max-width: 768px) {
+  .heading-h2_padding24 {
+    padding: 0 0 8px 0;
+  }
+}
+
+.heading-h2_padding4 {
+  padding: 0 0 4px 0;
+}
+@media screen and (max-width: 768px) {
+  .heading-h2_padding4 {
+    padding: 0 0 8px 0;
   }
 }
 

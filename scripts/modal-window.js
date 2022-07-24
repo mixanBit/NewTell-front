@@ -21,5 +21,3 @@ for(let i = 0; i < btnModal.length; i++){
     dataReceived.classList.remove('data-received_active')
   })
 }
-
-
