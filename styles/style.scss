@@ -27,6 +27,16 @@ button, input, textarea{
   outline: none;
 }
 
+section{  padding: 60px 0 60px 0; }
+
+p{
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  padding: 0 0 20px 0;
+}
 
 // Общие
 .container{
@@ -44,12 +54,14 @@ button, input, textarea{
   margin: auto;
 }
 
-.container__padding-one{
+.section--padding160{
   padding: 160px 0 160px 0;
     @media screen and (max-width: 1024px) {
       padding: 80px 0 80px 0;
     }
 }
+
+.section--padding0{ padding: 0 0 0 0; }
 
 .heading-h2{
   font-style: normal;
@@ -106,6 +118,68 @@ button, input, textarea{
       margin-top: 16px;
     }
 }
+
+.button-style{
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 190%;
+  color: white;
+  background: rgba(0,0,0,0);
+  transition: .3s linear;
+  padding: 12px 32px 12px 32px;
+    &:hover{
+      border: 1px solid #005AA3;
+      background: #005AA3;
+    }
+}
+
+.input-style{
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0);
+  width: 100%;
+  height: 54px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  transition: .3s linear;
+  padding: 15px 20px 15px 20px;
+}
+
+.textarea-style{
+  border-radius: 8px;
+  width: 100%;
+  max-height: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  resize: none;
+  padding: 15px 20px 15px 20px;
+}
+
+.form-button{
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 190%;
+  background: #C0E16E;
+  transition: .3s linear;
+    &:hover{
+      background: #47B533;
+    }
+}
 // Конец общие
 
 // Кастомный scroll
@@ -142,7 +216,6 @@ button, input, textarea{
 }  
 // Конец кастомный scroll
 
-
 // Модальное коно
 .modal-window{
   width: 100%;
@@ -165,7 +238,6 @@ button, input, textarea{
   opacity: 1 !important;
 }
 // Конец модальное коно
-
 
 // Общие стилия для шапки и подвала
 .logo-img{

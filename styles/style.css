@@ -28,6 +28,19 @@ button, input, textarea {
   outline: none;
 }
 
+section {
+  padding: 60px 0 60px 0;
+}
+
+p {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  padding: 0 0 20px 0;
+}
+
 .container {
   max-width: var(--containerWidth);
   width: 100%;
@@ -43,13 +56,17 @@ button, input, textarea {
   margin: auto;
 }
 
-.container__padding-one {
+.section--padding160 {
   padding: 160px 0 160px 0;
 }
 @media screen and (max-width: 1024px) {
-  .container__padding-one {
+  .section--padding160 {
     padding: 80px 0 80px 0;
   }
+}
+
+.section--padding0 {
+  padding: 0 0 0 0;
 }
 
 .heading-h2 {
@@ -116,6 +133,77 @@ button, input, textarea {
   font-size: 20px;
   line-height: 170%;
   margin-top: 16px;
+}
+
+.button-style {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 190%;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  padding: 12px 32px 12px 32px;
+}
+.button-style:hover {
+  border: 1px solid #005AA3;
+  background: #005AA3;
+}
+
+.input-style {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 54px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  padding: 15px 20px 15px 20px;
+}
+
+.textarea-style {
+  border-radius: 8px;
+  width: 100%;
+  max-height: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  resize: none;
+  padding: 15px 20px 15px 20px;
+}
+
+.form-button {
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 190%;
+  background: #C0E16E;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.form-button:hover {
+  background: #47B533;
 }
 
 ::-webkit-scrollbar-button {
