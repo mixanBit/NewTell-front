@@ -105,6 +105,10 @@ p {
   }
 }
 
+.heading-h2_padding0 {
+  padding: 0 0 0 0;
+}
+
 .item-container {
   grid-gap: 30px;
 }

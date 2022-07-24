@@ -14,19 +14,21 @@
   <link rel="stylesheet" href="./styles/body.css">
   <link rel="stylesheet" href="./templates/footer/styles/footer.css">
 
+  <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Библиотека slick -->
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+  <script type="text/javascript" src="./slick/slick.min.js" defer></script>
+  <script src="./scripts/slick-settings.js" defer></script>
+
   <script src="./scripts/sidebar.js" defer></script>
   <script src="./scripts/scrolling.js" defer></script>
   <script src="./scripts/preloader.js" defer></script>
   <script src="./scripts/modal-window.js" defer></script>
   <script src="./scripts/validation-form.js" defer></script>
   <script src="./scripts/header-fixed.js" defer></script>
-
-  <!-- Библиотека slick -->
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
-  <script type="text/javascript" src="./slick/slick.min.js" defer></script>
-  <script src="./scripts/slick-settings.js" defer></script>
 </head>
 
 <body>
@@ -88,7 +90,7 @@
     <div class="modal-window">
       <div class="data-received">
         <img class="modal-close-btn" src="./page-images/newtell/CallMe/close.svg" alt="">
-        <h2 class="heading-h2">Данные получены</h2>
+        <h2 class="heading-h2 heading-h2_padding0">Данные получены</h2>
         <p class="data-received__p">Мы получили данные и свяжемся с вами в кратчайшие сроки.</p>
       </div>
     </div>
@@ -100,11 +102,19 @@
   <section class="service section--padding160" id="service">
     <div class="container">
       <div class="service__container">
-        <div class="service__video video">
+        <div class="service__video video modal-btn">
           <img class="video__preview" src="./page-images/newtell/about-service/laptop.png" alt="">
           <button class="video__button">
             <img src="./page-images/newtell/about-service/play-video.png" alt="">
           </button>
+        </div>
+
+        <div class="modal-window">
+          <div class="data-received video-modal">
+            <img class="modal-close-btn" src="./page-images/newtell/CallMe/close.svg" alt="">
+            <div class="thumb-wrap">
+              <iframe src="https://www.youtube.com/embed/k4W1gXoXbf4" title="Амазонка: плавающий лес | Неизведанные острова | Discovery Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+          </div>
         </div>
 
         <div class="service__text">
