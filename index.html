@@ -49,19 +49,19 @@
             <img src="./images/logo.png" alt="">
           </div>
         </a>
-        <div class="sidebar-fon"></div>
+        <div class="sidebar-fon" data-sidebar="fonCloseSidebar"></div>
         <div class="sidebar">
-          <button class="sidebar__btn">
+          <button class="sidebar__btn" data-sidebar="btnOpenSidebar">
             <span></span>
             <span></span>
             <span></span>
           </button>
           <nav class="header__menu menu">
-            <a class="header__link menu__link" target="_blank" href="#service">Об услуге</a>
-            <a class="header__link menu__link" target="_blank" href="#callme-this">Что это</a>
-            <a class="header__link menu__link" target="_blank" href="#to-use">Как использовать</a>
-            <a class="header__link menu__link" target="_blank" href="#decisions">Решения</a>
-            <a class="header__link menu__link" target="_blank" href="#advantages">Преимущества</a>
+            <a class="header__link menu__link" target="_blank" data-menu="link" href="#service">Об услуге</a>
+            <a class="header__link menu__link" target="_blank" data-menu="link" href="#callme-this">Что это</a>
+            <a class="header__link menu__link" target="_blank" data-menu="link" href="#to-use">Как использовать</a>
+            <a class="header__link menu__link" target="_blank" data-menu="link" href="#decisions">Решения</a>
+            <a class="header__link menu__link" target="_blank" data-menu="link" href="#advantages">Преимущества</a>
           </nav>
           <div class="header__connection connection">
             <a class="header__number connection__number" href="tel: +78007775005">+7 800 777-5005</a>
@@ -77,7 +77,7 @@
         <div class="callme__text">
           <h1 class="callme__h1">CallMe – это удобная связь с клиентами</h1>
           <p class="callme__p">Сервис, который помогает устанавливать связьс клиентом без использования привычных стандартов связи через номер телефона.</p>
-          <button class="button-style callme__btn-started modal-btn">Начать работу</button>
+          <button class="button-style callme__btn-started modal-btn" data-modal="btnOpenModal">Начать работу</button>
         </div>
 
         <div class="callme__img">
@@ -87,9 +87,9 @@
       </div>
     </section>
 
-    <div class="modal-window">
+    <div class="modal-window" data-modal="fonCloseModal">
       <div class="data-received">
-        <img class="modal-close-btn" src="./page-images/newtell/CallMe/close.svg" alt="">
+        <img class="modal-close-btn" data-modal="btnCloseModal" src="./page-images/newtell/CallMe/close.svg" alt="">
         <h2 class="heading-h2 heading-h2_padding0">Данные получены</h2>
         <p class="data-received__p">Мы получили данные и свяжемся с вами в кратчайшие сроки.</p>
       </div>
@@ -102,16 +102,16 @@
   <section class="service section--padding160" id="service">
     <div class="container">
       <div class="service__container">
-        <div class="service__video video modal-btn">
+        <div class="service__video video modal-btn" data-modal="btnOpenModal">
           <img class="video__preview" src="./page-images/newtell/about-service/laptop.png" alt="">
           <button class="video__button">
             <img src="./page-images/newtell/about-service/play-video.png" alt="">
           </button>
         </div>
 
-        <div class="modal-window">
+        <div class="modal-window" data-modal="fonCloseModal">
           <div class="data-received video-modal">
-            <img class="modal-close-btn" src="./page-images/newtell/CallMe/close.svg" alt="">
+            <img class="modal-close-btn" data-modal="btnCloseModal" src="./page-images/newtell/CallMe/close.svg" alt="">
             <div class="thumb-wrap">
               <iframe src="https://www.youtube.com/embed/k4W1gXoXbf4" title="Амазонка: плавающий лес | Неизведанные острова | Discovery Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
           </div>
@@ -348,10 +348,10 @@
       <h2 class="feedback__h2">Остались вопросы?<br> Напишите нам</h2>
       <form class="feedback__form" action="#" method="post">
         <div class="feedback__input-container">
-          <input class="input-style feedback__input" type="text" placeholder="Введите ваше имя" required >
+          <input class="input-style" data-input="inputCheckValidation" type="text" placeholder="Введите ваше имя" required >
         </div>
         <div class="feedback__input-container">
-          <input class="input-style feedback__input input-email" type="text" placeholder="Ваш email" required >
+          <input class="input-style input-email" data-input="inputCheckValidation" data-input-email="inputCheckValidation" type="text" placeholder="Ваш email" required >
           <div class="error-text">Введите email</div>
         </div>
         <textarea class="textarea-style feedback__textarea" name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>

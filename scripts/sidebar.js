@@ -1,8 +1,8 @@
 let sidebar = document.querySelector('.sidebar')
-let sidebarBtn = document.querySelector('.sidebar__btn')
 let sidebarFon = document.querySelector('.sidebar-fon')
 
-sidebarBtn.addEventListener('click', () => {
+
+$('[data-sidebar="btnOpenSidebar"]').on('click', function() {
   if(sidebar.classList.contains("sidebar_active")){
     sidebar.classList.remove('sidebar_active')
     sidebarFon.classList.remove('sidebar-fon_active')
@@ -10,18 +10,17 @@ sidebarBtn.addEventListener('click', () => {
     sidebar.classList.add('sidebar_active')
     sidebarFon.classList.add('sidebar-fon_active')
     if(sidebar.classList.contains("sidebar_active")){
-      $('.header__link').on('click', function() {
+      $('a[data-menu="link"]').on('click', function(el){
         sidebar.classList.remove('sidebar_active')
         sidebarFon.classList.remove('sidebar-fon_active')
       })
     }
   }
-})
+});
 
-sidebarFon.addEventListener('click', (el) => {
+$('[data-sidebar="fonCloseSidebar"]').on('click', function(el) {
   if(el.target.classList.contains("sidebar-fon_active") || el.target.classList.contains("sidebar__btn")){
     sidebar.classList.remove('sidebar_active')
-    sidebarFon.classList.remove('sidebar-fon_active')
+    el.target.classList.remove('sidebar-fon_active')
   }
 })
-

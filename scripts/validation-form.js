@@ -1,23 +1,21 @@
-let feedbackInput = document.querySelectorAll('.feedback__input')
 let errorText = document.querySelector('.error-text')
-let inputEmail = document.querySelector('.input-email')
-for(let i = 0; i < feedbackInput.length; i++){
-  feedbackInput[i].addEventListener('invalid', errorInput)
-  feedbackInput[i].addEventListener('input', resetErrorInput)
-  inputEmail.addEventListener('invalid', errorInputEamil)
-  inputEmail.addEventListener('input', resetErrorInputEmail)
-}
+
+$('[data-input="inputCheckValidation"]').on('invalid', errorInput)
+$('[data-input="inputCheckValidation"]').on('input', resetErrorInput)
+$('[data-input-email="inputCheckValidation"]').on('invalid', errorInputEamil)
+$('[data-input-email="inputCheckValidation"]').on('input', resetErrorInputEmail)
+
 
 function errorInput(el) {
   this.classList.add('input_error')
   el.preventDefault()
 }
 
-function resetErrorInput(el) {
+function resetErrorInput() {
   this.classList.remove('input_error')
 }
 
-function errorInputEamil(){
+function errorInputEamil(el){
   errorText.classList.add('error-text_active')
   el.preventDefault()
 }
