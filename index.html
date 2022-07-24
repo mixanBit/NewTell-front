@@ -14,11 +14,12 @@
   <link rel="stylesheet" href="./styles/body.css">
   <link rel="stylesheet" href="./templates/footer/styles/footer.css">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./scripts/sidebar.js" defer></script>
+  <script src="./scripts/scrolling.js" defer></script>
   <script src="./scripts/preloader.js" defer></script>
   <script src="./scripts/modal-window.js" defer></script>
   <script src="./scripts/validation-form.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./scripts/header-fixed.js" defer></script>
 
   <!-- Библиотека slick -->
@@ -54,11 +55,11 @@
             <span></span>
           </button>
           <nav class="header__menu menu">
-            <a class="header__link menu__link" target="_blank" href="#">Об услуге</a>
-            <a class="header__link menu__link" target="_blank" href="#">Что это</a>
-            <a class="header__link menu__link" target="_blank" href="#">Как использовать</a>
-            <a class="header__link menu__link" target="_blank" href="#">Решения</a>
-            <a class="header__link menu__link" target="_blank" href="#">Преимущества</a>
+            <a class="header__link menu__link" target="_blank" href="#service">Об услуге</a>
+            <a class="header__link menu__link" target="_blank" href="#callme-this">Что это</a>
+            <a class="header__link menu__link" target="_blank" href="#to-use">Как использовать</a>
+            <a class="header__link menu__link" target="_blank" href="#decisions">Решения</a>
+            <a class="header__link menu__link" target="_blank" href="#advantages">Преимущества</a>
           </nav>
           <div class="header__connection connection">
             <a class="header__number connection__number" href="tel: +78007775005">+7 800 777-5005</a>
@@ -69,15 +70,15 @@
     </header>
 
     <!-- CallMe – это удобная связь -->
-    <section class="CallMe">
-      <div class="CallMe__container container">
-        <div class="CallMe__text">
-          <h1 class="CallMe__h1">CallMe – это удобная связь с клиентами</h1>
-          <p class="CallMe__p">Сервис, который помогает устанавливать связьс клиентом без использования привычных стандартов связи через номер телефона.</p>
-          <button class="CallMe__btn-started modal-btn">Начать работу</button>
+    <section class="callme">
+      <div class="callme__container container">
+        <div class="callme__text">
+          <h1 class="callme__h1">CallMe – это удобная связь с клиентами</h1>
+          <p class="callme__p">Сервис, который помогает устанавливать связьс клиентом без использования привычных стандартов связи через номер телефона.</p>
+          <button class="callme__btn-started modal-btn">Начать работу</button>
         </div>
 
-        <div class="CallMe__img">
+        <div class="callme__img">
           <img src="./page-images/newtell/convenient-communication/hand-with-qr.png" alt="">
           </div>
         </div>
@@ -96,7 +97,7 @@
   <!-- Конец шапки -->
 
   <!-- Об услуге -->
-  <section class="service">
+  <section class="service" id="service">
     <div class="container">
       <div class="container__padding-one service__container">
         <div class="service__video video">
@@ -117,15 +118,15 @@
   <!-- Конец об услуге -->
 
    <!-- Технология WebRTC -->
-   <section class="WebRTC">
-    <div class="container WebRTC__container">
-      <div class="WebRTC__text">
+   <section class="webrtc">
+    <div class="container webrtc__container">
+      <div class="webrtc__text">
         <h2 class="heading-h2">Технология WebRTC</h2>
-        <p class="WebRTC__description">Данная технология представляет собой инструмент для коммуникации между пользователями посредством использования браузера или приложения, снижая тем самым препятствия в общении с клиентом и затраты на связь, для клиента  звонок бесплатный.
+        <p class="webrtc__description">Данная технология представляет собой инструмент для коммуникации между пользователями посредством использования браузера или приложения, снижая тем самым препятствия в общении с клиентом и затраты на связь, для клиента  звонок бесплатный.
         </p>
         <button class="baner__button">Поробовать</button>
       </div>
-      <div class="WebRTC__img">
+      <div class="webrtc__img">
         <img class="" src="./page-images/newtell/CallMe/human.png" alt="">
       </div>
     </div>
@@ -133,7 +134,7 @@
   <!-- Конец технология WebRTC -->
 
   <!-- CallMe это -->
-  <section class="callme-this">
+  <section class="callme-this" id="callme-this">
     <div class="container">
       <div class="container__padding-one">
         <h2 class="heading-h2">CallMe это</h2>
@@ -166,7 +167,7 @@
   <!-- Конец CallMe это  -->
 
   <!-- Как использовать -->
-  <section class="to-use">
+  <section class="to-use" id="to-use">
     <div class="container to-use__container">
       <div class="to-use__img">
         <img src="./page-images/newtell/how-to-use/to-use.png" alt="">
@@ -181,7 +182,7 @@
   <!-- Конец как использовать  -->
 
   <!-- Решения -->
-  <section class="decisions">
+  <section class="decisions" id="decisions">
     <div class="container">
       <div class="container__padding-one">
         <div class="decisions__management">
@@ -283,7 +284,7 @@
   <!-- Конец какие задачи решает  -->
 
   <!-- Наши преимущества -->
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="container">
       <div class="container__padding-one">
         <h2 class="heading-h2">Наши преимущества</h2>
@@ -370,11 +371,11 @@
         <img src="./images/logo.png" alt="">
       </div>
       <nav class="footer__menu menu">
-        <a class="menu__link" target="_blank" href="#">Об услуге</a>
-        <a class="menu__link" target="_blank" href="#">Что это</a>
-        <a class="menu__link" target="_blank" href="#">Как использовать</a>
-        <a class="menu__link" target="_blank" href="#">Решения</a>
-        <a class="menu__link" target="_blank" href="#">Преимущества</a>
+        <a class="menu__link" target="_blank" href="#service">Об услуге</a>
+        <a class="menu__link" target="_blank" href="#callme-this">Что это</a>
+        <a class="menu__link" target="_blank" href="#to-use">Как использовать</a>
+        <a class="menu__link" target="_blank" href="#decisions">Решения</a>
+        <a class="menu__link" target="_blank" href="#advantages">Преимущества</a>
       </nav>
       <div class="connection">
         <a class="connection__number" href="tel: +78007775005">+7 800 777-5005</a>

@@ -9,6 +9,12 @@ sidebarBtn.addEventListener('click', () => {
   } else{
     sidebar.classList.add('sidebar_active')
     sidebarFon.classList.add('sidebar-fon_active')
+    if(sidebar.classList.contains("sidebar_active")){
+      $('.header__link').on('click', function() {
+        sidebar.classList.remove('sidebar_active')
+        sidebarFon.classList.remove('sidebar-fon_active')
+      })
+    }
   }
 })
 
@@ -18,3 +24,4 @@ sidebarFon.addEventListener('click', (el) => {
     sidebarFon.classList.remove('sidebar-fon_active')
   }
 })
+

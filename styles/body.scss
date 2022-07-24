@@ -1,4 +1,4 @@
-// CallMe – это удобная связь
+// callme – это удобная связь
 .fon{
   background-image: url(../page-images/newtell/convenient-communication/bg.jpg);
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     }
 }
 
-.CallMe{
+.callme{
   overflow: hidden;
   margin-top: 64px;
     @media screen and (max-width: 768px) {
@@ -17,7 +17,7 @@
     }
 }
 
-.CallMe__container{
+.callme__container{
   display: flex;
   justify-content: space-between;
     @media screen and (max-width: 580px){
@@ -25,7 +25,7 @@
     }
 }
 
-.CallMe__text{
+.callme__text{
   padding: 72px 0 40px 0;
     @media screen and (max-width: 768px){
       padding: 34px 0 40px 0;
@@ -38,7 +38,7 @@
     }
 }
 
-.CallMe__h1{
+.callme__h1{
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -48,7 +48,7 @@
     }
 }
 
-.CallMe__p{
+.callme__p{
   max-width: 456px;
   width: 100%;
   font-style: normal;
@@ -61,7 +61,7 @@
     }
 }
 
-.CallMe__btn-started{
+.callme__btn-started{
   cursor: pointer;
   border-radius: 8px;
   display: flex;
@@ -85,7 +85,7 @@
     }
 }
 
-.CallMe__img{
+.callme__img{
   max-width: 511px;
   width: 100%;
   position: relative;
@@ -171,7 +171,7 @@
   font-size: 16px;
   line-height: 190%;
 }
-// Конец CallMe – это удобная связь
+// Конец callme – это удобная связь
 
 
 // Об услуге
@@ -259,13 +259,13 @@
 }
 // Конец об услуге
 
-// Технология WebRTC
-.WebRTC{
+// Технология webrtc
+.webrtc{
   color: white;
   background: linear-gradient(261.57deg, #82D2F9 2.45%, #06A3F0 112.29%); 
 }
 
-.WebRTC__container{
+.webrtc__container{
   display: flex;
   justify-content: space-between;
     @media screen and (max-width: 580px){
@@ -273,7 +273,7 @@
     }
 }
 
-.WebRTC__text{
+.webrtc__text{
   max-width: 576px;
   width: 100%;
   padding: 80px 0 80px 0;
@@ -282,7 +282,7 @@
     }
 }
 
-.WebRTC__description{
+.webrtc__description{
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -290,7 +290,7 @@
   margin-top: 4px;
 }
 
-.WebRTC__img{
+.webrtc__img{
   max-width: auto;
   display: flex;
   align-items: flex-end;
@@ -306,9 +306,9 @@
         }
     }
 }
-// Конец технология WebRTC
+// Конец технология webrtc
 
-// CallMe это
+// callme это
 .callme-this__container{
   display: flex;
   flex-direction: column;
@@ -343,7 +343,7 @@
       grid-gap: 24px;
     }
 }
-// Конец CallMe это
+// Конец callme это
 
 // Как использовать
 .to-use__container{

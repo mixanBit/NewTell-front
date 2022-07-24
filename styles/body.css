@@ -11,17 +11,17 @@
   }
 }
 
-.CallMe {
+.callme {
   overflow: hidden;
   margin-top: 64px;
 }
 @media screen and (max-width: 768px) {
-  .CallMe {
+  .callme {
     margin-top: 24px;
   }
 }
 
-.CallMe__container {
+.callme__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@
           justify-content: space-between;
 }
 @media screen and (max-width: 580px) {
-  .CallMe__container {
+  .callme__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -38,16 +38,16 @@
   }
 }
 
-.CallMe__text {
+.callme__text {
   padding: 72px 0 40px 0;
 }
 @media screen and (max-width: 768px) {
-  .CallMe__text {
+  .callme__text {
     padding: 34px 0 40px 0;
   }
 }
 @media screen and (max-width: 580px) {
-  .CallMe__text {
+  .callme__text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -62,19 +62,19 @@
   }
 }
 
-.CallMe__h1 {
+.callme__h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 150%;
 }
 @media screen and (max-width: 580px) {
-  .CallMe__h1 {
+  .callme__h1 {
     font-size: 24px;
   }
 }
 
-.CallMe__p {
+.callme__p {
   max-width: 456px;
   width: 100%;
   font-style: normal;
@@ -84,12 +84,12 @@
   margin-top: 24px;
 }
 @media screen and (max-width: 580px) {
-  .CallMe__p {
+  .callme__p {
     margin-top: 8px;
   }
 }
 
-.CallMe__btn-started {
+.callme__btn-started {
   cursor: pointer;
   border-radius: 8px;
   display: -webkit-box;
@@ -112,17 +112,17 @@
   padding: 12px 32px 12px 32px;
   margin-top: 40px;
 }
-.CallMe__btn-started:hover {
+.callme__btn-started:hover {
   background: #005AA3;
 }
 @media screen and (max-width: 580px) {
-  .CallMe__btn-started {
+  .callme__btn-started {
     width: 100%;
     margin-top: 30px;
   }
 }
 
-.CallMe__img {
+.callme__img {
   max-width: 511px;
   width: 100%;
   position: relative;
@@ -130,7 +130,7 @@
   margin-right: -70px;
 }
 @media screen and (max-width: 580px) {
-  .CallMe__img {
+  .callme__img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -141,7 +141,7 @@
     margin-right: auto;
   }
 }
-.CallMe__img::before {
+.callme__img::before {
   content: "";
   border-radius: 50%;
   width: 1019px;
@@ -153,7 +153,7 @@
   background: #C0E16E;
 }
 @media screen and (max-width: 580px) {
-  .CallMe__img::before {
+  .callme__img::before {
     max-width: 350px;
     width: 100%;
     max-height: 350px;
@@ -166,12 +166,12 @@
   }
 }
 @media screen and (max-width: 375px) {
-  .CallMe__img::before {
+  .callme__img::before {
     max-width: 263px;
     max-height: 263px;
   }
 }
-.CallMe__img img {
+.callme__img img {
   width: 100%;
   position: relative;
   z-index: 2;
@@ -354,12 +354,12 @@
   }
 }
 
-.WebRTC {
+.webrtc {
   color: white;
   background: linear-gradient(261.57deg, #82D2F9 2.45%, #06A3F0 112.29%);
 }
 
-.WebRTC__container {
+.webrtc__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +368,7 @@
           justify-content: space-between;
 }
 @media screen and (max-width: 580px) {
-  .WebRTC__container {
+  .webrtc__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -376,18 +376,18 @@
   }
 }
 
-.WebRTC__text {
+.webrtc__text {
   max-width: 576px;
   width: 100%;
   padding: 80px 0 80px 0;
 }
 @media screen and (max-width: 580px) {
-  .WebRTC__text {
+  .webrtc__text {
     padding: 40px 0 0 0;
   }
 }
 
-.WebRTC__description {
+.webrtc__description {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -395,7 +395,7 @@
   margin-top: 4px;
 }
 
-.WebRTC__img {
+.webrtc__img {
   max-width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,15 +407,15 @@
   margin-top: -38px;
 }
 @media screen and (max-width: 580px) {
-  .WebRTC__img {
+  .webrtc__img {
     margin-top: 20px;
   }
 }
-.WebRTC__img img {
+.webrtc__img img {
   width: 100%;
 }
 @media screen and (max-width: 580px) {
-  .WebRTC__img img {
+  .webrtc__img img {
     margin-bottom: -80px;
   }
 }
