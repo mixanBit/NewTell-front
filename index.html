@@ -50,7 +50,7 @@
           </div>
         </a>
         <div class="sidebar-fon" data-sidebar="fonCloseSidebar"></div>
-        <div class="sidebar">
+        <div class="sidebar" data-sidebar="sidebar">
           <button class="sidebar__btn" data-sidebar="btnOpenSidebar">
             <span></span>
             <span></span>
@@ -87,8 +87,8 @@
       </div>
     </section>
 
-    <div class="modal-window" data-modal="fonCloseModal">
-      <div class="data-received">
+    <div class="modal-window js-modal-window" data-modal="fonCloseModal" data-modal="window">
+      <div class="data-received js-modal-fon" data-modal="overflow">
         <img class="modal-close-btn" data-modal="btnCloseModal" src="./page-images/newtell/CallMe/close.svg" alt="">
         <h2 class="heading-h2 heading-h2_padding0">Данные получены</h2>
         <p class="data-received__p">Мы получили данные и свяжемся с вами в кратчайшие сроки.</p>
@@ -109,8 +109,8 @@
           </button>
         </div>
 
-        <div class="modal-window" data-modal="fonCloseModal">
-          <div class="data-received video-modal">
+        <div class="modal-window js-modal-window" data-modal="fonCloseModal" data-modal="window">
+          <div class="data-received video-modal js-modal-fon" data-modal="overflow">
             <img class="modal-close-btn" data-modal="btnCloseModal" src="./page-images/newtell/CallMe/close.svg" alt="">
             <div class="thumb-wrap">
               <iframe src="https://www.youtube.com/embed/k4W1gXoXbf4" title="Амазонка: плавающий лес | Неизведанные острова | Discovery Channel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
@@ -352,7 +352,7 @@
         </div>
         <div class="feedback__input-container">
           <input class="input-style input-email" data-input="inputCheckValidation" data-input-email="inputCheckValidation" type="text" placeholder="Ваш email" required >
-          <div class="error-text">Введите email</div>
+          <div class="error-text js-error-text">Введите email</div>
         </div>
         <textarea class="textarea-style feedback__textarea" name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
         <button class="form-button feedback__send">Отправить</button>

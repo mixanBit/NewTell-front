@@ -1,4 +1,4 @@
-let errorText = document.querySelector('.error-text')
+let errorText = document.querySelector('.js-error-text')
 
 $('[data-input="inputCheckValidation"]').on('invalid', errorInput)
 $('[data-input="inputCheckValidation"]').on('input', resetErrorInput)
